@@ -15,33 +15,39 @@ body {
 }
 
 /* ---------- Navigation ---------- */
-nav {
+header {
   width: 100%;
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  background-color: #161718;
+  padding: 10px 20px;
 }
-nav .content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
+header nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  gap: 20px;
+}
+header nav .nav1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav .nav2 {
+  display: flex;
+  gap: 20px;
   align-items: center;
 }
-nav .content .nav-bar img {
-  display: block;
+header nav .nav2 h3 {
+  font-size: 0.8rem;
 }
-nav .content .icon i {
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: #02569b;
-  transition: 0.3s ease;
+header nav .nav2 button {
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: #004C97;
+  border: none;
+  color: aliceblue;
 }
-nav .content .icon i:hover {
-  color: #0175c2;
+header nav .nav2 .ri-menu-line {
+  display: none;
 }
 
 /* ---------- Main Section ---------- */
@@ -106,11 +112,12 @@ section.view2 .container1 {
   display: grid;
 }
 section.view2 h3 {
-  margin-bottom: fdgvdsfgssyrtsyrtyrtyrtytryrty;
+  margin-bottom: 20px;
   font-size: 1.8rem;
   color: #fff;
 }
 section.view2 p {
+  margin-bottom: 20px;
   color: #ccc;
   font-size: 1rem;
 }
@@ -119,12 +126,11 @@ section.view2 img {
   width: 100%;
   height: auto;
   display: block;
-  background-color: #740a0a;
 }
 section.view2 .line-border {
   width: 100%;
-  border-top: 4px solid #740a0a;
-  margin-top: 10px;
+  border-top: 4px solid #c8baba;
+  margin-bottom: 40px;
 }
 
 section.view3 {
@@ -514,5 +520,15 @@ section.view6 .all-consultant .consultant-section .consultant-text button.btn1 {
     padding: 0px 160px;
     max-width: 770px;
     margin-top: 50px;
+  }
+}
+@media (max-width: 1023px) {
+  header .nav2 h3,
+  header .nav2 button {
+    display: none;
+  }
+  header .nav2 .ri-menu-line {
+    display: block;
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
